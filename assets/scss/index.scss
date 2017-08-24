@@ -152,7 +152,7 @@ main{
   position: relative;
 }
 .container-img{
-  width: 100%;
+  padding:  20px;
   height: 450px;
   overflow: hidden;
   margin-bottom: 25px;
@@ -172,11 +172,11 @@ main{
   font-size: 60px;
   margin-bottom: 30px;
   margin-top: 30px;
-  color: #000;
+  color: #610909;
   font-family: 'Bahiana', cursive;
   letter-spacing: 3px;
   font-weight: normal;
-
+  background: rgba(255, 255, 255, 0.69);
 }
 
 .selected .list-category,
@@ -191,13 +191,14 @@ main{
   height: 100%;
   transform: rotate(180deg);
   opacity: 0;
-  background: #fff;
   transition: opacity 3.5s;
 }
 
 .portfolio{
   width: 1000px;
   display: block;
+  // padding: 0 15px;
+  background: rgba(255, 255, 255, 0.40);
   margin-left: calc(94% - 1000px);
 }
 
@@ -218,7 +219,6 @@ main{
   width: 100%;
   height: 200%;
   text-shadow: 5px 5px 7px #e6e6e6;
-  box-shadow: inset 25px 41px 47px #54300E;
 }
 
 .section-tittle{
@@ -253,7 +253,6 @@ main{
 .overlay{
   width: 100%;
   height: 100%;
-  background: #f3f3f3;
   transition: all 0.8s;
   box-shadow: inset 5px 34px 12px -4px #000;
 }
@@ -263,7 +262,8 @@ main{
   @extend .section-default;
   right: -50%;
   transform: rotate(20deg);
-  background: #36A300;
+  background: url("../img/bg-r-port2.png") no-repeat;
+  background-size: cover;
   /*background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);*/
   transition: all 1s;
   top: -40%;
@@ -325,10 +325,13 @@ main{
   /*box-shadow:inset 25px 41px 47px #54300E;*/
   left: -50%;
   //background: #54300E;
-  /*background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);*/
+  /*background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);*/  
+  background: url("../img/bg-l-port2.png") 100% #730000 no-repeat;
+  background-size: cover;
   transform: rotate(-160deg);
   transition: all 1s;
   top: -50%;
+  box-shadow: none;
   &::after {
     content: "";
     //background-image: url("../img/folha.jpg");
@@ -482,7 +485,7 @@ main{
     box-shadow: none;
   }
   .job-tittle{
-    font-size: 25px;
+    font-size: 21px;
     margin-bottom: 10px;
     width: 100%;
     margin-top: 50px;
