@@ -202,8 +202,8 @@ $feevale: #8fad9b;
   margin-bottom: 25px;
   border-radius: 3px;
   .scroll-img{
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
   }
   img{
     width: 100%;
@@ -288,9 +288,9 @@ $feevale: #8fad9b;
   overflow: hidden;
   z-index: 1000;
   &.compact{
-      animation-timing-function:ease;
-      animation-duration: 1.5s;
-      animation-fill-mode:forwards;
+    animation-timing-function:ease;
+    animation-duration: 1.5s;
+    animation-fill-mode:forwards;
   }
 }
 
@@ -443,67 +443,67 @@ $feevale: #8fad9b;
 
 //Animations for main section
 @keyframes unGameSide {
-    25%  {transform: rotate(-180deg); top:-50%;}
-    50%  {left: -50%; box-shadow: none;}
-    100% {left: -90%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
+  25%  {transform: rotate(-180deg); top:-50%;}
+  50%  {left: -50%; box-shadow: none;}
+  100% {left: -90%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
 }
 @keyframes GameSide {
-    25%  { transform: rotate(-180deg); top:-50%;}
-    50%  {left: -50%; box-shadow: none;}
-    100% {left: -10%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
+  25%  { transform: rotate(-180deg); top:-50%;}
+  50%  {left: -50%; box-shadow: none;}
+  100% {left: -10%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
 }
 @keyframes unSelGame {
-    0%   {left: -90%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
-    100% {left: -10%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
+  0%   {left: -90%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
+  100% {left: -10%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
 }
 @keyframes selUnGame {
-    0%   {left: -10%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
-    100% {left: -90%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
+  0%   {left: -10%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
+  100% {left: -90%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
 }
 
 @keyframes unWebSide {
-    25%  {transform: rotate(0deg); top:-50%;}
-    50%  {right: -50%; box-shadow: none;}
-    100% {right: -90%; transform: rotate(0deg); box-shadow: none; top:-50%;}
+  25%  {transform: rotate(0deg); top:-50%;}
+  50%  {right: -50%; box-shadow: none;}
+  100% {right: -90%; transform: rotate(0deg); box-shadow: none; top:-50%;}
 }
 @keyframes WebSide {
-    25%  {transform: rotate(0deg); top:-50%;}
-    50%  {right: -50%; box-shadow: none;}
-    100% {right: -10%; transform: rotate(0deg); box-shadow: none; top:-50%;}
+  25%  {transform: rotate(0deg); top:-50%;}
+  50%  {right: -50%; box-shadow: none;}
+  100% {right: -10%; transform: rotate(0deg); box-shadow: none; top:-50%;}
 }
 @keyframes unSelWeb {
-    0%   {right: -90%; transform: rotate(0deg); box-shadow: none; top:-50%;}
-    100% {right: -10%; transform: rotate(0deg); box-shadow: none; top:-50%;}
+  0%   {right: -90%; transform: rotate(0deg); box-shadow: none; top:-50%;}
+  100% {right: -10%; transform: rotate(0deg); box-shadow: none; top:-50%;}
 }
 @keyframes selUnWeb {
-    0%   {right: -10%; transform: rotate(0deg); box-shadow: none; top:-50%;}
-    100% {right: -90%; transform: rotate(0deg); box-shadow: none; top:-50%;}
+  0%   {right: -10%; transform: rotate(0deg); box-shadow: none; top:-50%;}
+  100% {right: -90%; transform: rotate(0deg); box-shadow: none; top:-50%;}
 }
 
 @keyframes WebTextSide {
-    90% {transform: rotate(-90deg); left: 2px; top: calc(50% - 150px;)}
-    100% {opacity: 0; transform: rotate(-90deg); left: 2px; top: calc(50% - 150px;)}
+  90% {transform: rotate(-90deg); left: 2px; top: calc(50% - 150px;)}
+  100% {opacity: 0; transform: rotate(-90deg); left: 2px; top: calc(50% - 150px;)}
 }
 @keyframes GameTextSide {
-    90% {transform: rotate(90deg); left: -35px; top: calc(50% - 130px;)}
-    100% {opacity: 0; transform: rotate(90deg); left: -35px; top: calc(50% - 130px;)}
+  90% {transform: rotate(90deg); left: -35px; top: calc(50% - 130px;)}
+  100% {opacity: 0; transform: rotate(90deg); left: -35px; top: calc(50% - 130px;)}
 }
 
-//Animations
+//Animation for profile picture
 @keyframes Profile {
-    50%{transform: scale(0);}
-    60% {transform: scale(0); right: calc(50% - 50px);  top: calc(50% - 50px);}
-    65%{right: 35px; top: 10px; transform: scale(0);}
-    80%{transform: scale(2); }
-    100%{transform: scale(1); width: 50px; height: 50px; right: 35px; top: 10px;}
+  50%{transform: scale(0);}
+  60% {transform: scale(0); right: calc(50% - 50px);  top: calc(50% - 50px);}
+  65%{right: 35px; top: 10px; transform: scale(0);}
+  80%{transform: scale(2); }
+  100%{transform: scale(1); width: 50px; height: 50px; right: 35px; top: 10px;}
 }
-//Animations
+//Animation profile picture for <= 500 
 @keyframes Profile500 {
-    50%{transform: scale(0);}
-    60% {transform: scale(0); right: calc(50% - 50px);  top: calc(50% - 50px);}
-    65%{right: 35px; top: 10px; transform: scale(0);}
-    80%{transform: scale(2); }
-    100%{transform: scale(1); width: 30px; height: 30px; right: 10px; top: 5px; box-shadow: 1px 3px 5px #54300E; border: 1px solid #fff;}
+  50%{transform: scale(0);}
+  60% {transform: scale(0); right: calc(50% - 50px);  top: calc(50% - 50px);}
+  65%{right: 35px; top: 10px; transform: scale(0);}
+  80%{transform: scale(2); }
+  100%{transform: scale(1); width: 30px; height: 30px; right: 10px; top: 5px; box-shadow: 1px 3px 5px #54300E; border: 1px solid #fff;}
 }
 
 
@@ -518,7 +518,7 @@ $feevale: #8fad9b;
     animation-name: Profile500;
   }
 }
-// Media
+// Media querys threatment
 @media screen and (max-width: 1000px){
   .section-default{
     width: 100%;
