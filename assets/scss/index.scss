@@ -1,6 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Bahiana|Dosis');
 //font-family: 'Bahiana', cursive;
 //font-family: 'Dosis', sans-serif;
+
+// Header props
+header{
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1000;
+  width: calc(100% - 30px);
+  background: #24292e;
+  height: 50px;
+  padding: 0 15px;  
+  .profile-img{
+    width: 80px;
+    height: 80px;
+    right: 10px;
+    top: 10px;
+    border-color: #241E1E; 
+  }
+  a{
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #DBD2D2;
+    height: 50px;
+    padding: 0 15px;
+    line-height: 50px;
+    font-weight: bold;
+    transition: all 0.5s;
+    &:hover{
+      background: darken(#24292e, 20%);
+    }
+  }
+}
+
+// Container props
+body{
+  overflow: hidden;
+  font-family: 'Dosis', sans-serif;
+}
+
+main{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
 #container{
   width: 1000px;
   margin: 0 auto;
@@ -45,94 +90,93 @@ $rafitthy: #60656b;
 $carrano: #60656b;
 $feevale: #8fad9b;
 
-.lanacakes{
-  .container-img{
-    border: 3px solid $lanacakes;
-    box-shadow: 2px 9px 30px $lanacakes;
-  }
-  .description{
-    border-top: 1px solid $lanacakes;
-    border-bottom: 1px solid $lanacakes;
-  }
-  .job-tittle{
-    text-shadow: 5px 5px 7px $lanacakes;
-  }
-}
-.ortope{
-  .container-img{
-    border: 3px solid $ortope;
-    box-shadow: 2px 9px 30px $ortope;
-  }
-  .description{
-    border-top: 1px solid $ortope;
-    border-bottom: 1px solid $ortope;
-  }
-  .job-tittle{
-    text-shadow: 5px 5px 7px $ortope;
-  }
-}
-.beforever{
-  .container-img{
-    border: 3px solid $beforever;
-    box-shadow: 2px 9px 30px $beforever;
-  }
-  .description{
-    border-top: 1px solid $beforever;
-    border-bottom: 1px solid $beforever;
-  }
-  .job-tittle{
-    text-shadow: 5px 5px 7px $beforever;
-  }
-}
-.rafitthy{
-  .container-img{
-    border: 3px solid $rafitthy;
-    box-shadow: 2px 9px 30px $rafitthy;
-  }
-  .description{
-    border-top: 1px solid $rafitthy;
-    border-bottom: 1px solid $rafitthy;
-  }
-  .job-tittle{
-    text-shadow: 5px 5px 7px $rafitthy;
-  }
-}
-.carrano{
-  .container-img{
-    border: 3px solid $carrano;
-    box-shadow: 2px 9px 30px $carrano;
-  }
-  .description{
-    border-top: 1px solid $carrano;
-    border-bottom: 1px solid $carrano;
-  }
-  .job-tittle{
-    text-shadow: 5px 5px 7px $carrano;
-  }
-}
-.feevale{
-  .container-img{
-    border: 3px solid $feevale;
-    box-shadow: 2px 9px 30px $feevale;
-  }
-  .description{
-    border-top: 1px solid $feevale;
-    border-bottom: 1px solid $feevale;
-  }
-  .job-tittle{
-    text-shadow: 5px 5px 7px $feevale;
-  }
+// .lanacakes{
+//   .container-img{
+//     border: 3px solid $lanacakes;
+//     box-shadow: 2px 9px 30px $lanacakes;
+//   }
+//   .description{
+//     border-top: 1px solid $lanacakes;
+//     border-bottom: 1px solid $lanacakes;
+//   }
+//   .job-tittle{
+//     text-shadow: 5px 5px 7px $lanacakes;
+//   }
+// }
+// .ortope{
+//   .container-img{
+//     border: 3px solid $ortope;
+//     box-shadow: 2px 9px 30px $ortope;
+//   }
+//   .description{
+//     border-top: 1px solid $ortope;
+//     border-bottom: 1px solid $ortope;
+//   }
+//   .job-tittle{
+//     text-shadow: 5px 5px 7px $ortope;
+//   }
+// }
+// .beforever{
+//   .container-img{
+//     border: 3px solid $beforever;
+//     box-shadow: 2px 9px 30px $beforever;
+//   }
+//   .description{
+//     border-top: 1px solid $beforever;
+//     border-bottom: 1px solid $beforever;
+//   }
+//   .job-tittle{
+//     text-shadow: 5px 5px 7px $beforever;
+//   }
+// }
+// .rafitthy{
+//   .container-img{
+//     border: 3px solid $rafitthy;
+//     box-shadow: 2px 9px 30px $rafitthy;
+//   }
+//   .description{
+//     border-top: 1px solid $rafitthy;
+//     border-bottom: 1px solid $rafitthy;
+//   }
+//   .job-tittle{
+//     text-shadow: 5px 5px 7px $rafitthy;
+//   }
+// }
+// .carrano{
+//   .container-img{
+//     border: 3px solid $carrano;
+//     box-shadow: 2px 9px 30px $carrano;
+//   }
+//   .description{
+//     border-top: 1px solid $carrano;
+//     border-bottom: 1px solid $carrano;
+//   }
+//   .job-tittle{
+//     text-shadow: 5px 5px 7px $carrano;
+//   }
+// }
+// .feevale{
+//   .container-img{
+//     border: 3px solid $feevale;
+//     box-shadow: 2px 9px 30px $feevale;
+//   }
+//   .description{
+//     border-top: 1px solid $feevale;
+//     border-bottom: 1px solid $feevale;
+//   }
+//   .job-tittle{
+//     text-shadow: 5px 5px 7px $feevale;
+//   }
+// }
+
+#games-container .job-tittle{
+  color: #341010;
+  background: rgba(255,255,255,0.69);
 }
 
-body{
-  overflow: hidden;
-  font-family: 'Dosis', sans-serif;
-}
-
-main{
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+#web-container .job-tittle{
+  color: #154356;
+  background: rgba(255,255,255,0.69);
 }
 
 .owl-nav{
@@ -451,7 +495,7 @@ main{
     60% {transform: scale(0); right: calc(50% - 50px);  top: calc(50% - 50px);}
     65%{right: 35px; top: 10px; transform: scale(0);}
     80%{transform: scale(2); }
-    100%{transform: scale(1); width: 50px; height: 50px; right: 35px; top: 10px; box-shadow: 4px 6px 10px #54300E;}
+    100%{transform: scale(1); width: 50px; height: 50px; right: 35px; top: 10px;}
 }
 //Animations
 @keyframes Profile500 {

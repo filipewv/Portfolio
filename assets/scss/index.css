@@ -1,4 +1,50 @@
 @import url("https://fonts.googleapis.com/css?family=Bahiana|Dosis");
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: calc(100% - 30px);
+  background: #24292e;
+  height: 50px;
+  padding: 0 15px;
+}
+
+header .profile-img {
+  width: 80px;
+  height: 80px;
+  right: 10px;
+  top: 10px;
+  border-color: #241E1E;
+}
+
+header a {
+  display: block;
+  float: left;
+  text-decoration: none;
+  color: #DBD2D2;
+  height: 50px;
+  padding: 0 15px;
+  line-height: 50px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+header a:hover {
+  background: black;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Dosis', sans-serif;
+}
+
+main {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 #container {
   width: 1000px;
   margin: 0 auto;
@@ -41,99 +87,14 @@
   display: block;
 }
 
-.lanacakes .container-img {
-  border: 3px solid #d4a3a3;
-  box-shadow: 2px 9px 30px #d4a3a3;
+#games-container .job-tittle {
+  color: #341010;
+  background: rgba(255, 255, 255, 0.69);
 }
 
-.lanacakes .description {
-  border-top: 1px solid #d4a3a3;
-  border-bottom: 1px solid #d4a3a3;
-}
-
-.lanacakes .job-tittle {
-  text-shadow: 5px 5px 7px #d4a3a3;
-}
-
-.ortope .container-img {
-  border: 3px solid #71b9d4;
-  box-shadow: 2px 9px 30px #71b9d4;
-}
-
-.ortope .description {
-  border-top: 1px solid #71b9d4;
-  border-bottom: 1px solid #71b9d4;
-}
-
-.ortope .job-tittle {
-  text-shadow: 5px 5px 7px #71b9d4;
-}
-
-.beforever .container-img {
-  border: 3px solid #a888ad;
-  box-shadow: 2px 9px 30px #a888ad;
-}
-
-.beforever .description {
-  border-top: 1px solid #a888ad;
-  border-bottom: 1px solid #a888ad;
-}
-
-.beforever .job-tittle {
-  text-shadow: 5px 5px 7px #a888ad;
-}
-
-.rafitthy .container-img {
-  border: 3px solid #60656b;
-  box-shadow: 2px 9px 30px #60656b;
-}
-
-.rafitthy .description {
-  border-top: 1px solid #60656b;
-  border-bottom: 1px solid #60656b;
-}
-
-.rafitthy .job-tittle {
-  text-shadow: 5px 5px 7px #60656b;
-}
-
-.carrano .container-img {
-  border: 3px solid #60656b;
-  box-shadow: 2px 9px 30px #60656b;
-}
-
-.carrano .description {
-  border-top: 1px solid #60656b;
-  border-bottom: 1px solid #60656b;
-}
-
-.carrano .job-tittle {
-  text-shadow: 5px 5px 7px #60656b;
-}
-
-.feevale .container-img {
-  border: 3px solid #8fad9b;
-  box-shadow: 2px 9px 30px #8fad9b;
-}
-
-.feevale .description {
-  border-top: 1px solid #8fad9b;
-  border-bottom: 1px solid #8fad9b;
-}
-
-.feevale .job-tittle {
-  text-shadow: 5px 5px 7px #8fad9b;
-}
-
-body {
-  overflow: hidden;
-  font-family: 'Dosis', sans-serif;
-}
-
-main {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+#web-container .job-tittle {
+  color: #154356;
+  background: rgba(255, 255, 255, 0.69);
 }
 
 .owl-nav {
@@ -584,7 +545,6 @@ main {
     height: 50px;
     right: 35px;
     top: 10px;
-    box-shadow: 4px 6px 10px #54300E;
   }
 }
 
