@@ -68,7 +68,7 @@ function CalcHeight(){
 }
 
 $("document").ready(function () {
-  CalcHeight();
+  // CalcHeight();
   SelectType();
   $(".owl-carousel").owlCarousel({
       items:1,
