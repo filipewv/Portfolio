@@ -90,85 +90,6 @@ $rafitthy: #60656b;
 $carrano: #60656b;
 $feevale: #8fad9b;
 
-// .lanacakes{
-//   .container-img{
-//     border: 3px solid $lanacakes;
-//     box-shadow: 2px 9px 30px $lanacakes;
-//   }
-//   .description{
-//     border-top: 1px solid $lanacakes;
-//     border-bottom: 1px solid $lanacakes;
-//   }
-//   .job-tittle{
-//     text-shadow: 5px 5px 7px $lanacakes;
-//   }
-// }
-// .ortope{
-//   .container-img{
-//     border: 3px solid $ortope;
-//     box-shadow: 2px 9px 30px $ortope;
-//   }
-//   .description{
-//     border-top: 1px solid $ortope;
-//     border-bottom: 1px solid $ortope;
-//   }
-//   .job-tittle{
-//     text-shadow: 5px 5px 7px $ortope;
-//   }
-// }
-// .beforever{
-//   .container-img{
-//     border: 3px solid $beforever;
-//     box-shadow: 2px 9px 30px $beforever;
-//   }
-//   .description{
-//     border-top: 1px solid $beforever;
-//     border-bottom: 1px solid $beforever;
-//   }
-//   .job-tittle{
-//     text-shadow: 5px 5px 7px $beforever;
-//   }
-// }
-// .rafitthy{
-//   .container-img{
-//     border: 3px solid $rafitthy;
-//     box-shadow: 2px 9px 30px $rafitthy;
-//   }
-//   .description{
-//     border-top: 1px solid $rafitthy;
-//     border-bottom: 1px solid $rafitthy;
-//   }
-//   .job-tittle{
-//     text-shadow: 5px 5px 7px $rafitthy;
-//   }
-// }
-// .carrano{
-//   .container-img{
-//     border: 3px solid $carrano;
-//     box-shadow: 2px 9px 30px $carrano;
-//   }
-//   .description{
-//     border-top: 1px solid $carrano;
-//     border-bottom: 1px solid $carrano;
-//   }
-//   .job-tittle{
-//     text-shadow: 5px 5px 7px $carrano;
-//   }
-// }
-// .feevale{
-//   .container-img{
-//     border: 3px solid $feevale;
-//     box-shadow: 2px 9px 30px $feevale;
-//   }
-//   .description{
-//     border-top: 1px solid $feevale;
-//     border-bottom: 1px solid $feevale;
-//   }
-//   .job-tittle{
-//     text-shadow: 5px 5px 7px $feevale;
-//   }
-// }
-
 .owl-nav{
   width: 100%;
   text-align: center;
@@ -223,7 +144,6 @@ $feevale: #8fad9b;
   display: block;
   width: 100%;
   height: 100%;
-  // transform: rotate(180deg);
   opacity: 0;
   transition: opacity 3.5s;
 }
@@ -231,7 +151,6 @@ $feevale: #8fad9b;
 .portfolio{
   width: 1000px;
   display: block;
-  // padding: 0 15px;
   background: rgba(54, 54, 54, 0.85);
   margin: 0 auto;
 }
@@ -251,18 +170,6 @@ $feevale: #8fad9b;
   left: 0;
   overflow: hidden;
 }
-
-// .section-tittle{
-//   font-family: 'Bahiana', cursive;
-//   letter-spacing: 8px;
-//   position: absolute;
-//   left: 0;  top: 30%;
-//   font-size: 80pt;
-//   color: #fff;
-//   transform: rotate(180deg);
-//   text-shadow: 5px 5px 7px #505050;
-//   transition: all 1s;
-// }
 
 .profile-img{
   position: absolute;
@@ -291,57 +198,23 @@ $feevale: #8fad9b;
 #web-container{
   @extend .section-default;
   top: 50px;
-  // transform: rotate(20deg);
   background: url("../img/bg-r-port2.png") no-repeat;
   background-size: cover;
   /*background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);*/
   transition: all 1s;
   z-index: 101;
-  // top: -40%;
   &.selected{
     animation-timing-function:ease;
     animation-name: WebSide;
     animation-duration: 2s;
     animation-fill-mode:forwards;
   }
-  // .list-category{
-  //   transform: rotate(0deg);
-  // }
-  // .section-tittle{
-  //   left:  60px;
-  //   transform: rotate(0deg);
-  // }
   &.unselected{
     animation-timing-function:ease;
     animation-name: unWebSide;
     animation-duration: 2s;
     animation-fill-mode:forwards;
   }
-  // &.unselected-selected{
-  //   animation-timing-function:ease;
-  //   animation-name: unSelWeb;
-  //   animation-duration: 2s;
-  //   animation-fill-mode:forwards;
-  //   .overlay-container{
-  //     @extend .overlay;
-  //   }
-  // }
-  // &.selected-unselected{
-  //   animation-timing-function:ease;
-  //   animation-name: selUnWeb;
-  //   animation-duration: 2s;
-  //   animation-fill-mode:forwards;
-  // }
-  // &.selected .section-tittle,
-  // &.unselected .section-tittle,
-  // &.unselected-selected .section-tittle,
-  // &.selected-unselected .section-tittle{
-  //   animation-timing-function:ease;
-  //   animation-name: WebTextSide;
-  //   animation-duration: 1s;
-  //   animation-fill-mode:forwards;
-  //   animation-delay: 1s;
-  // }
   .owl-prev{
     margin-left: -120px;
   }
@@ -383,40 +256,6 @@ $feevale: #8fad9b;
     animation-duration: 2s;
     animation-fill-mode:forwards;
   }
-  // &.selected-unselected{
-  //   animation-timing-function:ease;
-  //   animation-name: selUnGame;
-  //   animation-duration: 2s;
-  //   animation-fill-mode:forwards;
-  // }
-  // &.unselected-selected{
-  //   animation-timing-function:ease;
-  //   animation-name: unSelGame;
-  //   animation-duration: 2s;
-  //   animation-fill-mode:forwards;
-  //   .overlay-container{
-  //     @extend .overlay;
-  //   }
-  // }
-  // &.selected .section-tittle,
-  // &.unselected .section-tittle,
-  // &.unselected-selected .section-tittle,
-  // &.selected-unselected .section-tittle{
-  //   animation-timing-function:ease;
-  //   animation-name: GameTextSide;
-  //   animation-duration: 1s;
-  //   animation-fill-mode:forwards;
-  //   animation-delay: 1s;
-  // }
-  // .selected{
-  //   animation-timing-function:ease;
-  //   animation-name: GameSide;
-  //   animation-duration: 2s;
-  //   animation-fill-mode:forwards;
-  // }
-  // .section-tittle{
-  //   left: 100px;
-  // }
   .owl-prev{
     margin-left: 110px;
   }
@@ -430,14 +269,6 @@ $feevale: #8fad9b;
   0% {z-index: 105;}
   100% {bottom:0px; height: calc(100% - 50px); z-index: 105;}
 }
-// @keyframes unSelGame {
-//   0%   {left: -90%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
-//   100% {left: -10%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
-// }
-// @keyframes selUnGame {
-//   0%   {left: -10%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
-//   100% {left: -90%; transform: rotate(-180deg); box-shadow: none; top:-50%;}
-// }
 
 @keyframes unWebSide {
   100% {height: 50%; z-index: 101;}
@@ -446,41 +277,6 @@ $feevale: #8fad9b;
   0% {z-index: 105;}
   100% {bottom:0; height: 100%; z-index: 105;}
 }
-// @keyframes unSelWeb {
-//   0%   {right: -90%; transform: rotate(0deg); box-shadow: none; top:-50%;}
-//   100% {right: -10%; transform: rotate(0deg); box-shadow: none; top:-50%;}
-// }
-// @keyframes selUnWeb {
-//   0%   {right: -10%; transform: rotate(0deg); box-shadow: none; top:-50%;}
-//   100% {right: -90%; transform: rotate(0deg); box-shadow: none; top:-50%;}
-// }
-
-// @keyframes WebTextSide {
-//   90% {transform: rotate(-90deg); left: 2px; top: calc(50% - 150px;)}
-//   100% {opacity: 0; transform: rotate(-90deg); left: 2px; top: calc(50% - 150px;)}
-// }
-// @keyframes GameTextSide {
-//   90% {transform: rotate(90deg); left: -35px; top: calc(50% - 130px;)}
-//   100% {opacity: 0; transform: rotate(90deg); left: -35px; top: calc(50% - 130px;)}
-// }
-
-// //Animation for profile picture
-// @keyframes Profile {
-//   50%{transform: scale(0);}
-//   60% {transform: scale(0); right: calc(50% - 50px);  top: calc(50% - 50px);}
-//   65%{right: 35px; top: 10px; transform: scale(0);}
-//   80%{transform: scale(2); }
-//   100%{transform: scale(1); width: 50px; height: 50px; right: 35px; top: 10px;}
-// }
-// //Animation profile picture for <= 500 
-// @keyframes Profile500 {
-//   50%{transform: scale(0);}
-//   60% {transform: scale(0); right: calc(50% - 50px);  top: calc(50% - 50px);}
-//   65%{right: 35px; top: 10px; transform: scale(0);}
-//   80%{transform: scale(2); }
-//   100%{transform: scale(1); width: 30px; height: 30px; right: 10px; top: 5px; box-shadow: 1px 3px 5px #54300E; border: 1px solid #fff;}
-// }
-
 
 @media screen and (min-width: 500px){
   .profile-img.compact{
@@ -499,7 +295,6 @@ $feevale: #8fad9b;
     width: 100%;
     height: 50%;
     left: 0;
-    // transform: rotate(0);
     top: 0;
     box-shadow: none;
   }
@@ -532,17 +327,6 @@ $feevale: #8fad9b;
     right: calc(50% - 50px);
     top: calc(50% - 50px);
   }
-  // .section-tittle {
-  //   letter-spacing: 5px;
-  //   font-size: 30pt;
-  //   margin: 0;
-  //   transform: rotate(0deg);
-  // }
-  // #games-container .section-tittle,
-  // #web-container .section-tittle{
-  //   left: 20px;
-  //   top: 20px;
-  // }
   .portfolio{
     width: 100%;
   }
