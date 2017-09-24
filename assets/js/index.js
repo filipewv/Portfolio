@@ -6,13 +6,13 @@ function SelectType(){
         if (!$(".profile-img").hasClass("compact")) {
           $(".profile-img").addClass("compact")
         }
-        if ($(this).hasClass("unselected") || $(this).hasClass("selected-unselected")) {
+        if ($(this).hasClass("unselected")) {
            Selected($(this), $("#web-container"));
-        }else if (!$(this).hasClass("selected-unselected") && !$(this).hasClass("unselected-selected") ){
-          $(this).addClass("selected");
-          $(this).removeClass("unselected");
-          $("#web-container").removeClass("selected");
-          $("#web-container").addClass("unselected");
+        }else if (!$(this).hasClass("selected")){
+          $(this).addClass("unselected");
+          $(this).removeClass("selected");
+          $("#web-container").removeClass("unselected");
+          $("#web-container").addClass("selected");
           ColdownTime();
         }
       }
@@ -22,13 +22,13 @@ function SelectType(){
         if (!$(".profile-img").hasClass("compact")) {
           $(".profile-img").addClass("compact")
         }
-        if ($(this).hasClass("unselected") || $(this).hasClass("selected-unselected")) {
+        if ($(this).hasClass("unselected")) {
            Selected($(this), $("#games-container"));
-        }else if (!$(this).hasClass("selected-unselected") && !$(this).hasClass("unselected-selected") ){
-          $(this).addClass("selected");
-          $(this).removeClass("unselected");
-          $("#games-container").removeClass("selected");
-          $("#games-container").addClass("unselected");
+        }else if (!$(this).hasClass("selected")){
+          $(this).addClass("unselected");
+          $(this).removeClass("selected");
+          $("#games-container").removeClass("unselected");
+          $("#games-container").addClass("selected");
           ColdownTime();
         }
       }
@@ -39,11 +39,8 @@ function Selected(sel, unsel){
   ColdownTime();
   CleanElem(unsel);
   CleanElem(sel);
-  $(sel).addClass("unselected-selected");
   $(sel).removeClass("unselected");
-  $(unsel).addClass("selected-unselected");
   $(unsel).removeClass("selected");
-  $(unsel).removeClass("unselected-selected");
 }
 
 function CleanElem(element){
@@ -68,7 +65,7 @@ function CalcHeight(){
 }
 
 $("document").ready(function () {
-  CalcHeight();
+  // CalcHeight();
   SelectType();
   $(".owl-carousel").owlCarousel({
       items:1,
