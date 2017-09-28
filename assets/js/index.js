@@ -1,7 +1,7 @@
 var coldown = 0;
 
 function SelectType(){
-    $("#games-container").on("click", function(){
+    $("#web-container").on("click", function(){
       if (coldown == 0) {
         if (!$(".profile-img").hasClass("compact")) {
           $(".profile-img").addClass("compact")
@@ -17,7 +17,7 @@ function SelectType(){
         }
       }
   });
-    $("#web-container").on("click", function(){
+    $("#games-container").on("click", function(){
       if (coldown == 0) {
         if (!$(".profile-img").hasClass("compact")) {
           $(".profile-img").addClass("compact")
@@ -68,13 +68,13 @@ $("document").ready(function () {
   // CalcHeight();
   SelectType();
   $(".owl-carousel").owlCarousel({
-      items:1,
-      dots:false,
-      nav: true,
-      rewind: true,
-      navText:["<",">"]
-    });
+    items:1,
+    dots:false,
+    nav: true,
+    rewind: true,
+    navText:["<",">"]
+  });
   $(".scroll-img").mCustomScrollbar({
-  		axis:"y"
-  	});
+    axis:"y"
+  });
 });
